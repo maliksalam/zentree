@@ -1,58 +1,70 @@
 {
     "py_name": "Bodhidharma",
     "jp_name": "Daruma",
+    "dates": [452, 532],
     "info": "<b>Bodhidharma</b> (?-532)<br>Aliases: <i>Daruma</i><br><br>1st Zen Patriarch. Came from India. 28th Patriarch of Buddhism in an uninterrupted line that extends all the way back to the Gautama Buddha himself. Sat meditating for 9 years in a cave near Shaolin Monastery.",
     "children": [
         {"py_name": "Dàzǔ Huìkě",
          "jp_name": "Taiso Eka",
+         "dates": [487, 593],
          "info": "<b>Dàzǔ Huìkě</b> (487-593)<br>Aliases: <i>Taiso Eka</i><br><br>2nd Patriarch. Chopped his own arm to show Bodhidharma he was serious.",
          "children": [
             {"py_name": "Jiànzhì Sēngcàn",
              "jp_name": "Kanchi Sōsan",
-             "info": "<b>Jiànzhì Sēngcàn</b> (496-606)<br>Aliases: <i>Kanchi Sōsan</i><br><br>3rd Patriarch. <br><br><b>Works:</b> <i>Xin Xin Ming</i>",
+             "dates": [529, 606],
+             "info": "<b>Jiànzhì Sēngcàn</b> (529-606)<br>Aliases: <i>Kanchi Sōsan</i><br><br>3rd Patriarch. <br><br><b>Works:</b> <i>Xin Xin Ming</i>",
              "children":[
                   {"py_name": "Dayi Dàoxìn",
                    "jp_name": "Dōshin",
+                   "dates": [580, 651],
                    "info": "<b>Dayi Dàoxìn</b> (580-651)<br>Aliases: <i>Dōshin</i><br><br>4th Patriarch.",
                    "children": [
                     {
                         "py_name": "Niutou Farong",
                         "jp_name": "Gozu Hōyū",
+                        "dates": [594, 657],
                         "info": "<b>Niutou Farong</b> (594-657)<br>Aliases: <i>Gozu Hōyū</i><br><br>First interaction with Dàoxìn:<br>Dàoxìn: 'What are you up to?' <br>Farong: 'I am meditating on the mind' <br>Dàoxìn: 'What is it that is meditating? What is the mind?' <br>After studying with Dàoxìn, he began what became known as the Niutou (Oxhead) school of Zen. <br><br><b>Works:</b> <i>Xin Ming (Mind Inscription)</i> tr. Jess Row",
                         "children": [
                             {
                                 "py_name": "Chihyen",
                                 "jp_name": "Chigan",
-                                "info": "<b>Chihyen</b> (599-677)<br>Aliases: <i>Chigan</i><br><br>7 feet 6 inches tall. Warrior turned monk at 40.",
+                                "dates": [607, 677],
+                                "info": "<b>Chihyen</b> (600-677)<br>Aliases: <i>Chigan</i><br><br>7 feet 6 inches tall. Warrior turned monk at 40.",
                                 "children":[
                                     {
                                         "py_name": "Huifang",
                                         "jp_name": "Ehō",
+                                        "dates": [622, 695],
                                         "info": "<b>Huifang</b><br>Aliases: <i>Ehō</i>",
                                         "children":[
                                             {
                                                 "py_name": "Fachih",
                                                 "jp_name": "Hōji",
+                                                "dates": [635, 702],
                                                 "info": "<b>Fachih</b> (635-702)<br>Aliases: <i>Hōji</i><br><br>Was a disciple of Hóngrěn before becoming Huifang's dharma successor.",
                                                 "children":[
                                                     {
                                                         "py_name": "Zhiwei",
                                                         "jp_name": "Chïi",
+                                                        "dates": [646, 722],
                                                         "info": "<b>Zhiwei</b> (646-722)<br>Aliases: <i>Chïi</i><br><br>Credited with the actual formation of the Niutou zong lineage independent from the Northern and Southern schools of Zen with a strong prediliction towards emptiness and prajnaparamita.",
                                                         "children":[
                                                             {
                                                                 "py_name": "Helin Xuansu",
                                                                 "jp_name": "Kakurin Genso",
+                                                                "dates": [668, 752],
                                                                 "info": "<b>Helin Xuansu</b> (668-752)<br>Aliases: <i>Kakurin Genso</i><br><br>May have been a teacher of Fahai who then studied with Huineng and compiled the Platform Sutra.",
                                                                 "children":[
                                                                     {
                                                                         "py_name": "Jingshan Daoqin",
                                                                         "jp_name": "Kinzan Dōkin",
+                                                                        "dates": [714, 792],
                                                                         "info": "<b>Jingshan Daoqin</b> (714-792)<br>Aliases: <i>Kinzan Dōkin</i><br><br>Founder of Mōjuji Temple, he was a Confucian at first, but converted when he met Xuansu at 28.",
                                                                         "children":[
                                                                             {
                                                                                 "py_name": "Niaoge Daolin",
                                                                                 "jp_name": "Chōka Dōrin",
+                                                                                "dates": [741, 824],
                                                                                 "info": "<b>Niaoge Daolin</b> (741-824)<br>Aliases: <i>Chōka Dōrin, Jakusō (magpie nest)</i><br><br>Daolin became a monk at 9 and later would meditate up a tree for long periods of time hence his nicknames. He had a famous conversation with Bai Juyi (Haku Rakuten).<br>Juyi: 'What is the essence of Buddhism?'<br>Daolin: 'Not to do any evil, to do all good, to purify oneself, this is the teaching of all Buddhas'<br>Juyi: 'Any child of three knows that.'<br>Daolin: 'That is so, any child of three knows it, but even a man of eighty can't do it.'",
                                                                                 "children":[]
                                                                             }  
@@ -63,6 +75,7 @@
                                                             {
                                                                 "py_name": "Huichung",
                                                                 "jp_name": "Echū",
+                                                                "dates": [683, 769],
                                                                 "info": "<b>Huichung</b> (683-769)<br>Aliases: <i>Echū</i><br><br>Huichung is the last master of the Niutou school. It is said that Dengyo Daishi learned Niutou Zen from Shukunen<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                                                 "children":[]
                                                             }    
@@ -78,38 +91,45 @@
                     },
                     {"py_name": "Daman Hóngrěn",
                         "jp_name": "Konin",
+                        "dates": [601, 674],
                         "info": "<b>Daman Hóngrěn</b> (601-674)</b><br>Aliases: <i>Konin</i><br><br>5th Patriarch. Prominently featured in the Platform Sutra.",
                         "children": [
                                 {
                                     "py_name": "Fǎrù",
                                     "jp_name": "Hōnyo",
+                                    "dates": [638, 689],
                                     "info": "<b>Fǎrù</b> (638-689)</b><br>Aliases: <i>Hōnyo</i><br><br>The concept of a lineage seems to have originated with either him or his immediate followers",
                                     "children": []
                                 },
                                   {"py_name": "Dàjiàn Huìnéng",
                                    "jp_name": "Daikan Enō",
+                                   "dates": [638, 713],
                                    "info": "<b>Dàjiàn Huìnéng</b> (638-713)</b><br>Aliases: <i>Daikan Enō</i><br><br>6th Patriarch.<br><br><b>Works:</b> <i>The Platform Sutra</i>",
                                    "children": [
                                           {
                                               "py_name": "Qīngyuán Xíngsī",
                                               "jp_name": "Seigen Gyōshi",
+                                              "dates": [660, 740],
                                               "info": "<b>Qīngyuán Xíngsī</b> (660-740)</b><br>Aliases: <i>Seigen Gyōshi</i><br><br>",
                                               "children": [
                                                   {
                                                     "py_name": "Shítóu Xīqiān",
                                                     "jp_name": "Sekitō Kisen",
+                                                    "dates": [700, 790],
                                                     "info": "<b>Shítóu Xīqiān</b> (700-790)</b><br>Aliases: <i>Sekitō Kisen</i><br><br>Soto Zen descends through him.<br><br><b>Works:</b> <i>Sandokai <> Song of the Grass Hut</i>",
                                                     "children": [
                                                         {
                                                             "py_name": "Yàoshān Wéiyǎn",
                                                             "jp_name": "Yakusan Igen",
+                                                            "dates": [745, 828],
                                                             "info": "<b>Yàoshān Wéiyǎn</b> (745-828)<br>Aliases: <i>Yakusan Igen</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                                             "children": []
                                                         },
                                                         {
                                                             "py_name": "Tianhuang Daowu",
                                                             "jp_name": "Tennō Dago",
-                                                            "info": "<b>Tianhuang Daowu</b> (748–807)<br>Aliases: <i>Tennō Dōgo</i><br><br>Studied with Mazu for 2 years before coming to study under Shítóu.",
+                                                            "dates": [748, 807],
+                                                            "info": "<b>Tianhuang Daowu</b> (748-807)<br>Aliases: <i>Tennō Dōgo</i><br><br>Studied with Mazu for 2 years before coming to study under Shítóu.",
                                                             "children": []
                                                         }
                                                     ]
@@ -120,30 +140,35 @@
                                           {
                                               "py_name": "Nányuè Huáiràng",
                                               "jp_name": "Nangaku Ejõ",
-                                              "info": "<b>Nányuè Huáiràng</b> (677–744)<br>Aliases: <i>Nangaku Ejõ</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
+                                              "dates": [677, 744],
+                                              "info": "<b>Nányuè Huáiràng</b> (677-744)<br>Aliases: <i>Nangaku Ejõ</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                               "children":[]
                                             },
                                           {
                                               "py_name": "Nányáng Huìzhōng",
                                               "jp_name": "Nanyō Echū",
+                                              "dates": [675, 775],
                                               "info": "<b>Nányáng Huìzhōng</b> (675-775)<br>Aliases: <i>Nanyō Echū</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                               "children":[]
                                             },
                                           {
                                               "py_name": "Heze Shenhui",
                                               "jp_name": "Kataku Jinne",
+                                              "dates": [670, 762],
                                               "info": "<b>Heze Shenhui</b> (670-762)<br>Aliases: <i>Kataku Jinne</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                               "children":[]
                                             },
                                           {
                                               "py_name": "Yòngjiā Xuānjué",
                                               "jp_name": "Yōka Genkaku",
+                                              "dates": [665, 713],
                                               "info": "<b>Yòngjiā Xuānjué</b> (665-713)<br>Aliases: <i>Yōka Genkaku</i><br><br>Meeting with Huineng is described in the Platform Sutra.<br><br><b>Works:</b> <i>Shodoka</i>",
                                               "children":[]
                                             },
                                           {
                                               "py_name": "",  
                                               "jp_name": "Kutta Sanzo",
+                                              "dates": [665, 713],
                                               "info": "<b>Chinese Name</b><br><br>Only mentioned in Blyth and Osho. Of Indian origin. Said: 'Even the lowest heretics in the India I come from don't fall as low as that! Just to sit emptily and aimlessly, -- what can it profit you?<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                               "children":[]
                                             }
@@ -152,6 +177,7 @@
                             {
                                 "py_name": "Yùquán Shénxiù",
                                 "jp_name": "Jinshu",
+                                "dates": [605, 706],
                                 "info": "<b>Yùquán Shénxiù</b> (605-706)<br>Aliases: <i>Jinshu</i><br><br>Shénxiù was Hongren's de facto dharma heir before Huineng came along. He is somewhat of a foil in the Platform Sutra and writes the initial poem that Huineng responds to. Often saddled with gradualist views.<br><br><b>Works:</b> <i>Guan Xin Lun (Treatise on the Contemplation of the Mind)</i>",
                                 "children": []
                             }   

@@ -246,7 +246,7 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 100; });
+  nodes.forEach(function(d) { d.y = (d.dates[0]- 450) * 4; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -278,7 +278,7 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("x", function(d) { return d.children -10 || d._children ? -10 : 10; })
       .attr("dy", "-.65em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .attr("class", "py-name")
@@ -286,7 +286,7 @@ function update(source) {
       .style("fill-opacity", 0);
 
   nodeEnter.append("text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("x", function(d) { return d.children -10 || d._children ? -10 : 10; })
       .attr("dy", "1.35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.jp_name ; })
