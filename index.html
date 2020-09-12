@@ -174,7 +174,7 @@ $("#searchName").on("select2-selecting", function(e) {
 
 //===============================================
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
-    total_width = 2000,
+    total_width = 2500,
     total_height = 800,
     origin = 450,
     year_px_scale = 4,
@@ -381,12 +381,14 @@ function update(source) {
     .scale(x)
     .orient("bottom")
     .tickSize(0)
+    .tickFormat(d3.format(".0f"))
     .ticks(10);
 
   var xAxisBottom = d3.svg.axis()
     .scale(x)
     .orient("top")
-    .tickSize(0);
+    .tickSize(0)
+    .tickFormat(d3.format(".0f"));
 
   svg.append("g")
     .attr("class", "x axis")
