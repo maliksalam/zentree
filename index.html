@@ -174,8 +174,12 @@ $("#searchName").on("select2-selecting", function(e) {
 
 //===============================================
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
-    width = 2000 - margin.right - margin.left,
-    height = 800 - margin.top - margin.bottom;
+    total_width = 2000,
+    total_height = 800,
+    origin = 450,
+    year_px_scale = 4,
+    width = total_width - margin.right - margin.left,
+    height = total_height - margin.top - margin.bottom;
     
 var i = 0,
     duration = 750,
@@ -193,8 +197,8 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.right + margin.left)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("width", total_width)
+    .attr("height", total_height)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -237,7 +241,7 @@ d3.json("/data/lineage.json", function(error, data) {
   update(root);
 });
 
-d3.select(self.frameElement).style("height", "800px");
+d3.select(self.frameElement).style("height", total_width + "px");
 
 function update(source) {
 
@@ -246,7 +250,7 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = (d.dates[0]- 450) * 4; });
+  nodes.forEach(function(d) { d.y = (d.dates[0]- origin) * year_px_scale; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
@@ -366,6 +370,41 @@ function update(source) {
     d.y0 = d.y;
   });
 }
+
+  //add x axis
+  var xaxis_stop = 50;
+  var x = d3.scale.linear()
+    .range([0, total_width - (xaxis_stop * year_px_scale)])
+    .domain([origin, origin + (total_width / year_px_scale) - xaxis_stop]);
+
+  var xAxisTop = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .tickSize(0)
+    .ticks(10);
+
+  var xAxisBottom = d3.svg.axis()
+    .scale(x)
+    .orient("top")
+    .tickSize(0);
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0,0)")
+    .call(xAxisTop)
+    .selectAll("text")
+    .style("font-size", 14)
+    .style("font-family", "sans-serif");
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + (total_height - 50) + ")")
+    .call(xAxisBottom)
+    .selectAll("text")
+    .style("font-size", 14)
+    .style("font-family", "sans-serif");
+
+
 
 
 </script>

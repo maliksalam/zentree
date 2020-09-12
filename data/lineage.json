@@ -1,7 +1,7 @@
 {
     "py_name": "Bodhidharma",
     "jp_name": "Daruma",
-    "dates": [452, 532],
+    "dates": [450, 532],
     "info": "<b>Bodhidharma</b> (?-532)<br>Aliases: <i>Daruma</i><br><br>1st Zen Patriarch. Came from India. 28th Patriarch of Buddhism in an uninterrupted line that extends all the way back to the Gautama Buddha himself. Sat meditating for 9 years in a cave near Shaolin Monastery.",
     "children": [
         {"py_name": "Dàzǔ Huìkě",
@@ -106,37 +106,13 @@
                                    "dates": [638, 713],
                                    "info": "<b>Dàjiàn Huìnéng</b> (638-713)</b><br>Aliases: <i>Daikan Enō</i><br><br>6th Patriarch.<br><br><b>Works:</b> <i>The Platform Sutra</i>",
                                    "children": [
-                                          {
-                                              "py_name": "Qīngyuán Xíngsī",
-                                              "jp_name": "Seigen Gyōshi",
-                                              "dates": [660, 740],
-                                              "info": "<b>Qīngyuán Xíngsī</b> (660-740)</b><br>Aliases: <i>Seigen Gyōshi</i><br><br>",
-                                              "children": [
-                                                  {
-                                                    "py_name": "Shítóu Xīqiān",
-                                                    "jp_name": "Sekitō Kisen",
-                                                    "dates": [700, 790],
-                                                    "info": "<b>Shítóu Xīqiān</b> (700-790)</b><br>Aliases: <i>Sekitō Kisen</i><br><br>Soto Zen descends through him.<br><br><b>Works:</b> <i>Sandokai <> Song of the Grass Hut</i>",
-                                                    "children": [
-                                                        {
-                                                            "py_name": "Yàoshān Wéiyǎn",
-                                                            "jp_name": "Yakusan Igen",
-                                                            "dates": [745, 828],
-                                                            "info": "<b>Yàoshān Wéiyǎn</b> (745-828)<br>Aliases: <i>Yakusan Igen</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
-                                                            "children": []
-                                                        },
-                                                        {
-                                                            "py_name": "Tianhuang Daowu",
-                                                            "jp_name": "Tennō Dago",
-                                                            "dates": [748, 807],
-                                                            "info": "<b>Tianhuang Daowu</b> (748-807)<br>Aliases: <i>Tennō Dōgo</i><br><br>Studied with Mazu for 2 years before coming to study under Shítóu.",
-                                                            "children": []
-                                                        }
-                                                    ]
-                                                  }
-                                              ]
-                                            },
-                                          
+                                    {
+                                        "py_name": "Nányáng Huìzhōng",
+                                        "jp_name": "Nanyō Echū",
+                                        "dates": [675, 775],
+                                        "info": "<b>Nányáng Huìzhōng</b> (675-775)<br>Aliases: <i>Nanyō Echū</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
+                                        "children":[]
+                                      },                                          
                                           {
                                               "py_name": "Nányuè Huáiràng",
                                               "jp_name": "Nangaku Ejõ",
@@ -144,32 +120,87 @@
                                               "info": "<b>Nányuè Huáiràng</b> (677-744)<br>Aliases: <i>Nangaku Ejõ</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                               "children":[]
                                             },
-                                          {
-                                              "py_name": "Nányáng Huìzhōng",
-                                              "jp_name": "Nanyō Echū",
-                                              "dates": [675, 775],
-                                              "info": "<b>Nányáng Huìzhōng</b> (675-775)<br>Aliases: <i>Nanyō Echū</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
-                                              "children":[]
+                                            {
+                                                "py_name": "Heze Shenhui",
+                                                "jp_name": "Kataku Jinne",
+                                                "dates": [684, 758],
+                                                "info": "<b>Heze Shenhui</b> (670-762)<br>Aliases: <i>Kataku Jinne</i><br><br>Heze had studied the sutras, the daoist texts, and the Chinese classics by the time he was thirteen. That is when he met Huineng and became his disciple. Shenhui is notable for his strident attacks on Yuquan Shenxiu and the associated 'Northern School' (likely an invention of his). It is possible he is the actual author of the Platform Sutra<br><br><b>Works:</b> <i>Title <> Other Title</i>",
+                                                "children":[
+                                                    {
+                                                        "py_name": "Cizhou Faru",
+                                                        "jp_name": "",
+                                                        "dates": [723, 811],
+                                                        "info": "<b>Cizhou Faru</b> (723–811)<br>Aliases: <i>Zhiru</i>",
+                                                        "children":[
+                                                            {
+                                                                "py_name": "Yizhou Nanyin",
+                                                                "jp_name": "",
+                                                                "dates": [745, 810],
+                                                                "info": "<b>Chinese Name</b><br>Aliases: <i>Jingnan Weizhong</i>",
+                                                                "children":[
+                                                                    {
+                                                                        "py_name": "Suizhou Daoyuan",
+                                                                        "jp_name": "",
+                                                                        "dates": [775, 840],
+                                                                        "info": "<b>Suizhou Daoyuan</b><br><br> Not much known but there was likely another master between him and Heze Shenhui.",
+                                                                        "children":[
+                                                                            {
+                                                                                "py_name": "Guīfēng Zōngmì",
+                                                                                "jp_name": "Keihō Shūmitsu",
+                                                                                "dates": [780, 841],
+                                                                                "info": "<b>Guīfēng Zōngmì</b> (780–841)<br>Aliases: <i>Japanese Name</i><br><br>Zongmi was also the 5th patriarch of the Huayan school. Zongmi advocated 'sudden enlightenment' followed by 'gradual cultivation' uniting the teachings of the Southern and Northern schools of Zen. He also divided Zen into 5 types and wrote many manuals on meditation and commentaries on sutras. Zongmi's epitaph listed over ninety fascicles he had written. Through his writing, he was very influencial on Chinul and Korean Seon.<br><br><b>Works:</b> <i>nquiry into the Origin of Humanity <> Chan Preface</i>",
+                                                                                "children":[]
+                                                                            }   
+                                                                        ]
+                                                                    } 
+                                                                ]
+                                                            }   
+                                                        ]
+                                                    }     
+                                                ]
                                             },
-                                          {
-                                              "py_name": "Heze Shenhui",
-                                              "jp_name": "Kataku Jinne",
-                                              "dates": [670, 762],
-                                              "info": "<b>Heze Shenhui</b> (670-762)<br>Aliases: <i>Kataku Jinne</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
-                                              "children":[]
-                                            },
-                                          {
-                                              "py_name": "Yòngjiā Xuānjué",
-                                              "jp_name": "Yōka Genkaku",
-                                              "dates": [665, 713],
-                                              "info": "<b>Yòngjiā Xuānjué</b> (665-713)<br>Aliases: <i>Yōka Genkaku</i><br><br>Meeting with Huineng is described in the Platform Sutra.<br><br><b>Works:</b> <i>Shodoka</i>",
-                                              "children":[]
-                                            },
+                                            {
+                                                "py_name": "Yòngjiā Xuānjué",
+                                                "jp_name": "Yōka Genkaku",
+                                                "dates": [665, 713],
+                                                "info": "<b>Yòngjiā Xuānjué</b> (665-713)<br>Aliases: <i>Yōka Genkaku</i><br><br>Meeting with Huineng is described in the Platform Sutra.<br><br><b>Works:</b> <i>Shodoka</i>",
+                                                "children":[]
+                                              },
+                                            {
+                                                "py_name": "Qīngyuán Xíngsī",
+                                                "jp_name": "Seigen Gyōshi",
+                                                "dates": [660, 740],
+                                                "info": "<b>Qīngyuán Xíngsī</b> (660-740)</b><br>Aliases: <i>Seigen Gyōshi</i><br><br>",
+                                                "children": [
+                                                    {
+                                                      "py_name": "Shítóu Xīqiān",
+                                                      "jp_name": "Sekitō Kisen",
+                                                      "dates": [700, 790],
+                                                      "info": "<b>Shítóu Xīqiān</b> (700-790)</b><br>Aliases: <i>Sekitō Kisen</i><br><br>Soto Zen descends through him.<br><br><b>Works:</b> <i>Sandokai <> Song of the Grass Hut</i>",
+                                                      "children": [
+                                                          {
+                                                              "py_name": "Yàoshān Wéiyǎn",
+                                                              "jp_name": "Yakusan Igen",
+                                                              "dates": [745, 828],
+                                                              "info": "<b>Yàoshān Wéiyǎn</b> (745-828)<br>Aliases: <i>Yakusan Igen</i><br><br>Notes.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
+                                                              "children": []
+                                                          },
+                                                          {
+                                                              "py_name": "Tianhuang Daowu",
+                                                              "jp_name": "Tennō Dago",
+                                                              "dates": [748, 807],
+                                                              "info": "<b>Tianhuang Daowu</b> (748-807)<br>Aliases: <i>Tennō Dōgo</i><br><br>Studied with Mazu for 2 years before coming to study under Shítóu.",
+                                                              "children": []
+                                                          }
+                                                      ]
+                                                    }
+                                                ]
+                                              },
                                           {
                                               "py_name": "",  
                                               "jp_name": "Kutta Sanzo",
                                               "dates": [665, 713],
-                                              "info": "<b>Chinese Name</b><br><br>Only mentioned in Blyth and Osho. Of Indian origin. Said: 'Even the lowest heretics in the India I come from don't fall as low as that! Just to sit emptily and aimlessly, -- what can it profit you?<br><br><b>Works:</b> <i>Title <> Other Title</i>",
+                                              "info": "<b>Kutta Sanzo</b><br><br>Only mentioned in Blyth and Osho. Of Indian origin. Said: 'Even the lowest heretics in the India I come from don't fall as low as that! Just to sit emptily and aimlessly, -- what can it profit you?<br><br><b>Works:</b> <i>Title <> Other Title</i>",
                                               "children":[]
                                             }
                                           ]
@@ -180,7 +211,36 @@
                                 "dates": [605, 706],
                                 "info": "<b>Yùquán Shénxiù</b> (605-706)<br>Aliases: <i>Jinshu</i><br><br>Shénxiù was Hongren's de facto dharma heir before Huineng came along. He is somewhat of a foil in the Platform Sutra and writes the initial poem that Huineng responds to. Often saddled with gradualist views.<br><br><b>Works:</b> <i>Guan Xin Lun (Treatise on the Contemplation of the Mind)</i>",
                                 "children": []
-                            }   
+                            },
+                            {
+                                "py_name": "Sungyueh Huian",
+                                "jp_name": "Sūgaku Ean",
+                                "dates": [582, 709],
+                                "info": "<b>Sungyueh Huian</b> (582-709)<br>Aliases: <i>Sūgaku Ean</i><br><br>When asked for an audience by the Emperor Koso he avoided him and fled to the mountains where he was visited by many monks including Nányuè Huáiràng, a student oh Huineng's. When asked about Zen he used to simply open and shit his eyes. Sungyueh Huian died at the age of 128.",
+                                "children":[
+                                    {
+                                        "py_name": "Potsaoto",
+                                        "jp_name": "Hasōda",
+                                        "dates": [620, 700],
+                                        "info": "<b>Potsaoto</b><br>Aliases: <i>Hasōda (Oven Breaker)</i><br><br>Potsaoto got his nickname from an episode when he broke the sacrificial ovens of a mausoleum that was used for animal sacrifices.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
+                                        "children":[]
+                                    },
+                                    {
+                                        "py_name": "Yuankuei",
+                                        "jp_name": "Genkei",
+                                        "dates": [620, 700],
+                                        "info": "<b>Yuankuei</b><br>Aliases: <i>Genkei</i>",
+                                        "children":[]
+                                    },
+                                    {
+                                        "py_name": "Jenchien",
+                                        "jp_name": "Ninken",
+                                        "dates": [620, 700],
+                                        "info": "<b>Jenchien</b><br>Aliases: <i>Ninken, Tōtō Oshō (Master Freelance)</i><br><br>When he was asked by the empress for an audience, he entered her room, was silent for some time, then asked: 'Do you understand?' 'Not at all,' she replied. 'I keep my vow of silence,' he concluded and left.<br><br><b>Works:</b> <i>Title <> Other Title</i>",
+                                        "children":[]
+                                    }      
+                                ]
+                            }      
                                     ]
                                     }
                                 ]
