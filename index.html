@@ -2,6 +2,14 @@
 <meta charset="utf-8">
 <style>
 
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .node {
   cursor: pointer;
 }
@@ -13,18 +21,20 @@
 }
 
 .node text {
+  stroke: rgb(75, 75, 75);
+  stroke-width: 0.75px;
   font: 12px sans-serif;
 }
 
 .link {
   fill: none;
-  stroke: #ccc;
+  stroke: rgb(100, 100, 100);
   stroke-width: 5px;
 }
 
 .found {
-  fill: #ff4136;
-  stroke: #ff4136;
+  fill: #ff8d36;
+  stroke: #ff8d36;
 }
 
 .search {
@@ -40,13 +50,18 @@ ul.select2-results {
 div.tooltip {	
     position: absolute;			
     text-align: left;			
-    width: 300px;					
-    height: 200px;					
-    padding: 3px;				
+    width: 500px;					
+    height: auto;					
+    padding: 10px;				
     font: 12px sans-serif;		
     background: lightsteelblue;	
     border: 2px;		
-    border-radius: 8px;			
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 100, 100, 0.4);
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);			
     pointer-events: none;			
 }
 
@@ -80,7 +95,7 @@ function select2DataCollectName(d) {
         d.children.forEach(select2DataCollectName);
     else if (d._children)
         d._children.forEach(select2DataCollectName);
-    select2Data.push(d.py_name);
+    select2Data.push(d.all_names);
 }
 
 //===============================================
@@ -164,7 +179,7 @@ $("#searchName").on("select2-selecting", function(e) {
     expandAll(root);
     update(root);
 
-    searchField = "d.py_name";
+    searchField = "d.all_names";
     searchText = e.object.text;
     searchTree(root);
     root.children.forEach(collapseAllNotFound);
@@ -174,8 +189,8 @@ $("#searchName").on("select2-selecting", function(e) {
 
 //===============================================
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
-    total_width = 2500,
-    total_height = 800,
+    total_width = 6500,
+    total_height = 1000,
     origin = 450,
     year_px_scale = 4,
     width = total_width - margin.right - margin.left,
@@ -186,6 +201,7 @@ var i = 0,
     root;
 
 var tree = d3.layout.tree()
+    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2)})
     .size([height, width]);
 
 var diagonal = d3.svg.diagonal()
@@ -243,6 +259,8 @@ d3.json("/data/lineage.json", function(error, data) {
 
 d3.select(self.frameElement).style("height", total_width + "px");
 
+
+
 function update(source) {
 
   // Compute the new tree layout.
@@ -264,13 +282,16 @@ function update(source) {
       .on("mouseover", function(d) {		
             div.transition()		
                 .duration(100)		
-                .style("opacity", .9);		
-            div	.html(d.info)	
-                .style("left", (d3.event.pageX - 100) + "px");	
+                .style("opacity", .9)		
+            div.html(d.info);	
+            if (d3.event.pageX > width / 2){
+                div.style("left", (d3.event.pageX - 500) + "px")}
+            else {div.style("left", (d3.event.pageX) + "px")};
             if (d3.event.pageY > height / 2){
-                div.style("top", (d3.event.pageY - 235) + "px")}
-            else {div.style("top", (d3.event.pageY + 25) + "px")}    ;	
-            })					
+                div.style("top", (d3.event.pageY) + "px")}
+            else {div.style("top", (d3.event.pageY) + "px")}	
+            })	
+			
         .on("mouseout", function(d) {		
             div.transition()		
                 .duration(100)		
@@ -282,19 +303,20 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("text")
-      .attr("x", function(d) { return d.children -10 || d._children ? -10 : 10; })
-      .attr("dy", "-.65em")
-      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .attr("x", function(d) { return d.children -10 || d._children ? 10 : 10; })
+      .attr("dy", "-.5em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "start" : "start"; })
       .attr("class", "py-name")
+      .attr("transform", "rotate (-45)")
       .text(function(d) { return d.py_name ; })
       .style("fill-opacity", 0);
 
-  nodeEnter.append("text")
-      .attr("x", function(d) { return d.children -10 || d._children ? -10 : 10; })
-      .attr("dy", "1.35em")
-      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-      .text(function(d) { return d.jp_name ; })
-      .style("fill-opacity", 0);
+//   nodeEnter.append("text")
+//       .attr("x", function(d) { return d.children -10 || d._children ? -10 : 10; })
+//       .attr("dy", "1.35em")
+//       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+//       .text(function(d) { return d.jp_name ; })
+//       .style("fill-opacity", 0);
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -305,7 +327,7 @@ function update(source) {
       .attr("r", 4.5)
       .style("fill", function(d) {
             if (d.class === "found") {
-                return "#ff4136"; //red
+                return "#ff8d36"; //red
             } else if (d._children) {
                 return "lightsteelblue";
             } else {
@@ -314,7 +336,7 @@ function update(source) {
         })
         .style("stroke", function(d) {
             if (d.class === "found") {
-                return "#ff4136"; //red
+                return "#ff8d36"; //red
             }
         });
 
@@ -351,7 +373,7 @@ function update(source) {
       .attr("d", diagonal)
       .style("stroke", function(d) {
             if (d.target.class === "found") {
-                return "#ff4136";
+                return "#ff8d36";
             }
         });
 
@@ -382,13 +404,14 @@ function update(source) {
     .orient("bottom")
     .tickSize(0)
     .tickFormat(d3.format(".0f"))
-    .ticks(10);
+    .ticks(40);
 
   var xAxisBottom = d3.svg.axis()
     .scale(x)
     .orient("top")
     .tickSize(0)
-    .tickFormat(d3.format(".0f"));
+    .tickFormat(d3.format(".0f"))
+    .ticks(40);
 
   svg.append("g")
     .attr("class", "x axis")
@@ -396,7 +419,9 @@ function update(source) {
     .call(xAxisTop)
     .selectAll("text")
     .style("font-size", 14)
-    .style("font-family", "sans-serif");
+    .style("font-family", "sans-serif")
+    .style("stroke", "rgb(75, 75, 75)")
+    .style("stroke-width", "0.75px");
 
   svg.append("g")
     .attr("class", "x axis")
@@ -404,7 +429,9 @@ function update(source) {
     .call(xAxisBottom)
     .selectAll("text")
     .style("font-size", 14)
-    .style("font-family", "sans-serif");
+    .style("font-family", "sans-serif")
+    .style("stroke", "rgb(75, 75, 75)")
+    .style("stroke-width", "0.75px");
 
 
 
